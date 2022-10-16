@@ -20,6 +20,10 @@
   box-sizing: border-box;
 }
 
+header, h1, nav, .list-comment {
+  font-family: 'Kaushan', cursive, sans-serif;
+}
+
 header {
   width: 90%;
   padding: 15px 0;
@@ -65,8 +69,33 @@ main {
   width: 200px;
   height: 200px;
   margin: 10px;
+  padding: 100px 0;
+  position: relative;
 }
 
 .list-comment {
   width: 200px;
+  position: absolute;
+  top: 180px;
+  left: 0;
+  bottom: 0;
+  margin-top: 90px;
+}
+
+.list-body {
+  display: block;
+  color: gray;
+  font-size: 12px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.list-title {
+  font-size: 18px;
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-decoration: none;
 }
